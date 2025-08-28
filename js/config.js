@@ -169,32 +169,6 @@ const API_SITES = {
         name: "👖瓜子影视App",
         api: "https://cdn.jsdelivr.net/gh/YYDS678/uzVideo-extensions@main/vod/js/Zhi_gzapp.txt"
     },
-    guazi_web: {
-        name: "👖瓜子影视Web",
-        api: "https://cdn.jsdelivr.net/gh/YYDS678/uzVideo-extensions@main/vod/js/Zhi_gzys.js"
-    },
-    xiuluo: {
-        name: "👖修罗影视",
-        api: "https://cdn.jsdelivr.net/gh/YYDS678/uzVideo-extensions@main/vod/js/Zhi_biliys.js"
-    },
-    hanju: {
-        name: "👖韩剧看看",
-        api: "https://cdn.jsdelivr.net/gh/YYDS678/uzVideo-extensions@main/vod/js/Zhi_hjkk.js"
-    },
-    s4kav: {
-        name: "👖4k-av",
-        api: "https://cdn.jsdelivr.net/gh/YYDS678/uzVideo-extensions@main/vod/js/Zhi_4kav.js"
-    },
-    xiaozhang: {
-        name: "👖校长影视",
-        remark: "✈️TG频道@stymei1",
-        api: "https://cdn.jsdelivr.net/gh/YYDS678/uzVideo-extensions@main/vod/js/Pan_xzys.txt"
-    },
-    bttwo: {
-        name: "👖2个BT",
-        api: "https://cdn.jsdelivr.net/gh/yswag/uzVideo@main/js/spider/bttwo.js",
-        remark: "✈️TG频道@stymei1"
-    }
 };
 
 // 定义合并方法
