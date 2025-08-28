@@ -21,13 +21,247 @@ const SITE_CONFIG = {
 };
 
 // API站点配置
+/*
 const API_SITES = {
     testSource: {
         api: 'https://www.example.com/api.php/provide/vod',
         name: '空内容测试源',
         adult: true
     }
+    
     //ARCHIVE https://telegra.ph/APIs-08-12
+};
+*/
+const API_SITES = {
+    stymei1_channel: {
+        name: "📌关注TG频道@stymei1",
+        remark: "✈️TG频道@stymei1",
+        api: "https://heimuer.ggff.net/api.php/tvbox",
+        disabled: true // 这是一个非视频源的推广链接，建议禁用或移除
+    },
+    airport_promo: {
+        name: "👇🏻2元1000G机场分享👇🏻",
+        remark: "✈️TG频道@stymei1",
+        api: "https://mozhuazy.com/api.php/provide/vod/?ac=list",
+        disabled: true // 这同样是推广链接
+    },
+    kelayun: {
+        name: "https://kelayun.notepin.co",
+        remark: "✈️TG频道@stymei1",
+        api: "http://caiji.dyttzyapi.com/api.php/provide/vod/?ac=list"
+    },
+    douban: {
+        name: "👖豆瓣",
+        remark: "✈️TG频道@stymei1",
+        api: "https://caiji.dbzy5.com/api.php/provide/vod/from/dbm3u8/at/josn"
+    },
+    maotai: {
+        name: "👖茅台",
+        remark: "✈️TG频道@stymei1",
+        api: "https://caiji.maotaizy.cc/api.php/provide/vod/from/mtm3u8/at/josn"
+    },
+    ruyi: {
+        name: "👖如意",
+        remark: "✈️TG频道@stymei1",
+        api: "http://cj.rycjapi.com/api.php/provide/vod/?ac=list"
+    },
+    liangzi: {
+        name: "👖量子",
+        remark: "✈️TG频道@stymei1",
+        api: "https://cj.lziapi.com/api.php/provide/vod/?ac=list"
+    },
+    wolong: {
+        name: "👖卧龙",
+        remark: "✈️TG频道@stymei1",
+        api: "https://collect.wolongzy.cc/api.php/provide/vod/at/xml/?ac=list"
+    },
+    baofeng: {
+        name: "👖暴风",
+        remark: "✈️TG频道@stymei1",
+        api: "http://by.bfzyapi.com/api.php/provide/vod"
+    },
+    s360: {
+        name: "👖360",
+        remark: "✈️TG频道@stymei1",
+        api: "https://360zyzz.com/api.php/provide/vod/from/360m3u8/at/json"
+    },
+    jisu: {
+        name: "👖极速",
+        remark: "✈️TG频道@stymei1",
+        api: "https://jszyapi.com/api.php/provide/vod/from/jsm3u8/at/json"
+    },
+    uku: {
+        name: "👖U酷",
+        remark: "✈️TG频道@stymei1",
+        api: "https://api.ukuapi88.com/api.php/provide/vod/?ac=list"
+    },
+    tianya: {
+        name: "👖天涯",
+        remark: "✈️TG频道@stymei1",
+        api: "https://tyyszyapi.com/api.php/provide/vod/?ac=list"
+    },
+    wujin: {
+        name: "👖无尽",
+        remark: "✈️TG频道@stymei1",
+        api: "https://api.wujinapi.me/api.php/provide/vod/?ac=list"
+    },
+    iqiyi: {
+        name: "👖iQIYI",
+        remark: "✈️TG频道@stymei1",
+        api: "https://iqiyizyapi.com/api.php/provide/vod/from/snm3u8/at/xml"
+    },
+    ikun: {
+        name: "👖ikun",
+        remark: "✈️TG频道@stymei1",
+        api: "https://ikunzyapi.com/api.php/provide/vod/from/ikm3u8/at/json"
+    },
+    modu: {
+        name: "👖魔都",
+        remark: "✈️TG频道@stymei1",
+        api: "https://www.mdzyapi.com/api.php/provide/vod/?ac=list"
+    },
+    baiduyun: {
+        name: "👖百度云",
+        remark: "✈️TG频道@stymei1",
+        api: "https://api.apibdzy.com/api.php/provide/vod/?ac=list"
+    },
+    shandian: {
+        name: "👖闪电",
+        remark: "✈️TG频道@stymei1",
+        api: "https://xsd.sdzyapi.com/api.php/provide/vod/?ac=list"
+    },
+    hongniu: {
+        name: "👖红牛",
+        remark: "✈️TG频道@stymei1",
+        api: "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/josn"
+    },
+    guangsu: {
+        name: "👖光速",
+        remark: "✈️TG频道@stymei1",
+        api: "https://api.guangsuapi.com/api.php/provide/vod/from/gsm3u8"
+    },
+    xinlang: {
+        name: "👖新浪",
+        remark: "✈️TG频道@stymei1",
+        api: "https://api.xinlangapi.com/xinlangapi.php/provide/vod/from/xlm3u8"
+    },
+    kuaiche: {
+        name: "👖快车",
+        remark: "✈️TG频道@stymei1",
+        api: "https://caiji.kuaichezy.org/api.php/provide/vod/?ac=list"
+    },
+    jinying: {
+        name: "👖金鹰",
+        remark: "✈️TG频道@stymei1",
+        api: "https://jyzyapi.com/provide/vod/from/jinyingm3u8/at/json"
+    },
+    maoyan: {
+        name: "👖猫眼",
+        remark: "✈️TG频道@stymei1",
+        api: "https://api.maoyanapi.top/api.php/provide/vod"
+    },
+    wangwang: {
+        name: "👖旺旺",
+        remark: "✈️TG频道@stymei1",
+        api: "https://api.wwzy.tv/api.php/provide/vod/?ac=list"
+    },
+    huya: {
+        name: "👖虎牙",
+        remark: "✈️TG频道@stymei1",
+        api: "https://www.huyaapi.com/api.php/provide/vod/from/hym3u8/at/json"
+    },
+    haohua: {
+        name: "👖豪华",
+        remark: "✈️TG频道@stymei1",
+        api: "https://hhzyapi.com/api.php/provide/vod/from/hhm3u8/at/json"
+    },
+    subo: {
+        name: "👖速播",
+        remark: "✈️TG频道@stymei1",
+        api: "https://subocj.com/api.php/provide/vod/from/subm3u8/at/json"
+    },
+    feifan: {
+        name: "👖非凡",
+        remark: "✈️TG频道@stymei1",
+        api: "http://api.ffzyapi.com/api.php/provide/vod/?ac=list"
+    },
+    yinghua: {
+        name: "👖樱花",
+        remark: "✈️TG频道@stymei1",
+        api: "https://m3u8.apiyhzy.com/api.php/provide/vod/?ac=list"
+    },
+    youzhi: {
+        name: "👖优质",
+        remark: "✈️TG频道@stymei1",
+        api: "http://api.yzzy-api.com/inc/apijson.php?ac=list"
+    },
+    yaya: {
+        name: "👖鸭鸭",
+        remark: "✈️TG频道@stymei1",
+        api: "https://cj.yayazy.net/api.php/provide/vod/?ac=list"
+    },
+    pubupan: {
+        name: "👖瀑布盘",
+        remark: "✈️TG频道@stymei1",
+        api: "https://dh.ha.cn/api.php/provide/vod/?ac=list"
+    },
+    niuniu: {
+        name: "👖牛牛",
+        remark: "✈️TG频道@stymei1",
+        api: "https://api.niuniuzy.me/api.php/provide/vod/from/nnm3u8/at/xml"
+    },
+    zuida: {
+        name: "👖最大",
+        remark: "✈️TG频道@stymei1",
+        api: "http://zuidazy.me/api.php/provide/vod"
+    },
+    piaoling: {
+        name: "👖飘零",
+        remark: "✈️TG频道@stymei1",
+        api: "https://p2100.net/api.php/provide/vod"
+    },
+    s1080: {
+        name: "👖1080",
+        remark: "✈️TG频道@stymei1",
+        api: "https://api.1080zyku.com/inc/apijson.php"
+    },
+    shenma: {
+        name: "👖神马",
+        remark: "✈️TG频道@stymei1",
+        api: "https://img.smdyw.top/api.php/provide/vod"
+    },
+    guazi_app: {
+        name: "👖瓜子影视App",
+        remark: "✈️TG频道@stymei1",
+        api: "https://cdn.jsdelivr.net/gh/YYDS678/uzVideo-extensions@main/vod/js/Zhi_gzapp.txt"
+    },
+    guazi_web: {
+        name: "👖瓜子影视Web",
+        remark: "✈️TG频道@stymei1",
+        api: "https://cdn.jsdelivr.net/gh/YYDS678/uzVideo-extensions@main/vod/js/Zhi_gzys.js"
+    },
+    xiuluo: {
+        name: "👖修罗影视",
+        api: "https://cdn.jsdelivr.net/gh/YYDS678/uzVideo-extensions@main/vod/js/Zhi_biliys.js"
+    },
+    hanju: {
+        name: "👖韩剧看看",
+        api: "https://cdn.jsdelivr.net/gh/YYDS678/uzVideo-extensions@main/vod/js/Zhi_hjkk.js"
+    },
+    s4kav: {
+        name: "👖4k-av",
+        api: "https://cdn.jsdelivr.net/gh/YYDS678/uzVideo-extensions@main/vod/js/Zhi_4kav.js"
+    },
+    xiaozhang: {
+        name: "👖校长影视",
+        remark: "✈️TG频道@stymei1",
+        api: "https://cdn.jsdelivr.net/gh/YYDS678/uzVideo-extensions@main/vod/js/Pan_xzys.txt"
+    },
+    bttwo: {
+        name: "👖2个BT",
+        api: "https://cdn.jsdelivr.net/gh/yswag/uzVideo@main/js/spider/bttwo.js",
+        remark: "✈️TG频道@stymei1"
+    }
 };
 
 // 定义合并方法
