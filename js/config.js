@@ -101,10 +101,6 @@ const API_SITES = {
         name: "👖红牛",
         api: "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/josn"
     },
-    guangsu: {
-        name: "👖光速",
-        api: "https://api.guangsuapi.com/api.php/provide/vod/from/gsm3u8"
-    },
     xinlang: {
         name: "👖新浪",
         api: "https://api.xinlangapi.com/xinlangapi.php/provide/vod/from/xlm3u8"
@@ -113,10 +109,6 @@ const API_SITES = {
         name: "👖快车",
         api: "https://caiji.kuaichezy.org/api.php/provide/vod/?ac=list"
     },
-    jinying: {
-        name: "👖金鹰",
-        api: "https://jyzyapi.com/provide/vod/from/jinyingm3u8/at/json"
-    },
     maoyan: {
         name: "👖猫眼",
         api: "https://api.maoyanapi.top/api.php/provide/vod"
@@ -124,10 +116,6 @@ const API_SITES = {
     wangwang: {
         name: "👖旺旺",
         api: "https://api.wwzy.tv/api.php/provide/vod/?ac=list"
-    },
-    huya: {
-        name: "👖虎牙",
-        api: "https://www.huyaapi.com/api.php/provide/vod/from/hym3u8/at/json"
     },
     haohua: {
         name: "👖豪华",
